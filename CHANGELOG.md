@@ -107,6 +107,33 @@ Ho modificato il CSS della sezione eventi (`.events-horizontal`) per dare più s
 
 ---
 
+### 17 Marzo 2026 - Configurato deploy automatico GitHub Actions → SiteGround
+
+**Cosa ho fatto:**
+Ho creato il workflow GitHub Actions per fare il deploy automatico del sito su SiteGround via FTP ogni volta che faccio push sul branch `main`.
+
+**File coinvolti:**
+- `.github/workflows/deploy.yml` - Nuovo file workflow
+
+**Configurazione:**
+- Trigger: push su branch `main` o esecuzione manuale (`workflow_dispatch`)
+- Server FTP: preso da `secrets.FTP_SERVER`
+- Username/Password: da `secrets.FTP_USERNAME` e `secrets.FTP_PASSWORD`
+- **IMPORTANTE**: `server-dir: /public_html/` → deploy diretto nella root, senza creare sottocartelle
+- File esclusi dal deploy:
+  - `.git*`, `node_modules/`, `.DS_Store`
+  - File di test (`test-*.png`)
+  - File di sviluppo (`screenshot.js`, `AGENTS.md`, `CHANGELOG.md`, `README.md`)
+
+**Come funziona:**
+1. Faccio modifiche in locale
+2. Commit e push su GitHub
+3. GitHub Actions parte automaticamente
+4. Carica tutti i file via FTP su SiteGround in `/public_html/`
+5. Il sito è aggiornato!
+
+---
+
 **Note per dopo:**
 - Se aggiungo altre pagine, devo ricordarmi di:
   1. Aggiungere `<div id="header-container"></div>` e `<div id="footer-container"></div>`
