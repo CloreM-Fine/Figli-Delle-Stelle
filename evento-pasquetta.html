@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasquetta 2026 | Figli delle Stelle</title>
+    <meta name="description"
+        content="Pasquetta 2026 al Caffè delle Mura - Lucca. Pranzo con piano bar e dopo pranzo con DJ set. Prenota ora!">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/evento.css">
+</head>
+
+<body>
+    <!-- Global gradient background -->
+    <div class="page-background"></div>
+    <!-- Particles Background -->
+    <div id="particles-container" class="particles-container"></div>
+
+    <!-- Header Container -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Collaboration Logos -->
+            <div class="collab-logos">
+                <div class="logo-item">
+                    <img src="assets/images/figli%20delle%20stelle%20.svg" alt="Figli delle Stelle" class="logo-img">
+                </div>
+                <div class="logo-divider">
+                    <span>×</span>
+                </div>
+                <div class="logo-item">
+                    <img src="assets/images/9.svg" alt="SOLEA" class="logo-img solea">
+                </div>
+            </div>
+
+            <!-- Event Title -->
+            <h1 class="hero-title modern-title">
+                <span class="title-line-1">Sarà perchè...</span>
+                <span class="title-line-2">è <em>PASQUETTA</em></span>
+            </h1>
+
+            <!-- Subtitle -->
+            <div class="hero-subtitle modern-subtitle">
+                <p class="subtitle-intro">Un evento speciale con due format in un'unica giornata</p>
+                
+                <div class="formats-row">
+                    <div class="format-card">
+                        <div class="format-header">
+                            <span class="format-icon">☀️</span>
+                            <div class="format-title">
+                                <strong class="format-name">PRANZO</strong>
+                                <span class="format-brand">Figli delle Stelle</span>
+                            </div>
+                        </div>
+                        <p class="format-desc">Si pranza, si canta e si vive l'atmosfera insieme a loro.</p>
+                    </div>
+                    
+                    <div class="format-card">
+                        <div class="format-header">
+                            <span class="format-icon">🎶</span>
+                            <div class="format-title">
+                                <strong class="format-name">AFTERLUNCH</strong>
+                                <span class="format-brand">Solea</span>
+                            </div>
+                        </div>
+                        <p class="format-desc">House commerciale per continuare a ballare dopo pranzo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Pills -->
+            <div class="hero-info">
+                <div class="info-pill date">
+                    <i class="fas fa-calendar"></i>
+                    <span>Lunedì 6 Aprile 2026</span>
+                </div>
+                <div class="info-pill">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Antico Caffè delle Mura, Lucca</span>
+                </div>
+            </div>
+
+            <!-- Message Box - Chat Style -->
+            <div class="message-box">
+                <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <label>Hai domande? Scrivici qui:</label>
+                    <div class="message-input-wrapper">
+                        <textarea name="messaggio" class="message-input" placeholder="Ciao, vorrei sapere..."
+                            required></textarea>
+                        <button type="submit" class="message-submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <input type="hidden" name="evento" value="Pasquetta 2026">
+                    <div class="quick-actions">
+                        <button type="button" class="quick-action" onclick="setMessage('Quanto costa il biglietto?')">💰
+                            Prezzi</button>
+                        <button type="button" class="quick-action" onclick="setMessage('A che ora inizia?')">🕐
+                            Orari</button>
+                        <button type="button" class="quick-action" onclick="setMessage('Come posso arrivare?')">📍
+                            Location</button>
+                        <button type="button" class="quick-action" onclick="setMessage('Cosa include il pacchetto?')">📦
+                            Pacchetti</button>
+                    </div>
+                </form>
+                <div class="message-success" id="messageSuccess">
+                    <i class="fas fa-check-circle" style="font-size: 24px; margin-bottom: 10px; display: block;"></i>
+                    Messaggio inviato! Ti risponderemo presto.
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="hero-cta">
+                <a href="#prenota" class="btn-primary">
+                    <span>Prenota Ora</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#pacchetti" class="btn-secondary">Scopri i Pacchetti</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section V2 - Modern Design -->
+    <section class="location-section-v2" id="location">
+        <div class="location-container">
+            <!-- Header -->
+            <div class="location-header">
+                <span class="section-label">Location</span>
+                <h2>Antico Caffè delle Mura</h2>
+                <p>Una location storica nel cuore di Lucca, circondata dalle mura rinascimentali. Un posto magico dove musica e atmosfera si fondono.</p>
+            </div>
+            
+            <!-- Content Grid -->
+            <div class="location-grid">
+                <!-- Info Card -->
+                <div class="location-info-card">
+                    <div>
+                        <h3 class="venue-name">Antico Caffè delle Mura</h3>
+                        <p class="venue-tagline">Nel cuore delle Mura di Lucca</p>
+                    </div>
+                    
+                    <div class="location-info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Indirizzo</h4>
+                                <p>Via Vittorio Emanuele II, 56<br>55100 Lucca LU</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Orario Evento</h4>
+                                <p>13:00 - 23:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-parking"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Parcheggio</h4>
+                                <p>Parcheggio disponibile<br><a href="https://maps.google.com/?q=parcheggio+mura+lucca" target="_blank">Vedi parcheggi vicini</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-actions">
+                        <a href="https://maps.google.com/?q=Antico+Caffè+delle+Mura+Lucca" target="_blank" class="btn-location btn-location-primary">
+                            <i class="fas fa-directions"></i>
+                            Indicazioni
+                        </a>
+                        <a href="https://www.anticocaffedellemura.it" target="_blank" class="btn-location btn-location-secondary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Sito Web
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- iPhone Mockup with Map -->
+                <div class="iphone-container">
+                    <div class="iphone">
+                        <div class="iphone-frame">
+                            <div class="iphone-notch"></div>
+                            <div class="iphone-screen">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.2684704848246!2d10.50212331541983!3d43.84163807911589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d5845f8e0c6b95%3A0x6f1c2d7b5c8f4e0!2sAntico%20Caff%C3%A8%20delle%20Mura!5e0!3m2!1sit!2sit!4v1708365600000!5m2!1sit!2sit"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <div class="iphone-reflection"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="pacchetti" class="section section-packages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Pacchetti</span>
+                <h2 class="section-title">Scegli la tua <em>esperienza</em></h2>
+            </div>
+
+            <div class="packages-grid">
+                <!-- Pranzo Package -->
+                <div class="package-card featured">
+                    <div class="package-header">
+                        <span class="package-badge">Pranzo</span>
+                        <div class="package-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3 class="package-name">PRANZO SHOW</h3>
+                        <p class="package-subtitle">piano bar con <strong>GIANNINO</strong></p>
+                        <div class="package-time">
+                            <i class="fas fa-clock"></i>
+                            <span>Dalle 12:30</span>
+                        </div>
+                    </div>
+                    <div class="package-price">
+                        <span class="currency">€</span>
+                        <span class="amount">20</span>
+                    </div>
+                    <hr class="package-divider">
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Focacce gourmet</li>
+                        <li><i class="fas fa-check"></i> Pizze al portafoglio</li>
+                        <li><i class="fas fa-check"></i> Piano bar live</li>
+                        <li><i class="fas fa-check"></i> Posto riservato</li>
+                    </ul>
+                    <a href="#prenota" class="btn btn-package" data-package="pranzo">
+                        Prenota Pranzo
+                    </a>
+                </div>
+
+                <!-- Dopo Pranzo Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <span class="package-badge">Serata</span>
+                        <div class="package-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <h3 class="package-name">Dopo Pranzo</h3>
+                        <div class="package-time">
+                            <i class="fas fa-clock"></i>
+                            <span>Dalle 17:00</span>
+                        </div>
+                    </div>
+                    <div class="package-price">
+                        <span class="currency">€</span>
+                        <span class="amount">10</span>
+                    </div>
+                    <hr class="package-divider">
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Ingresso serale</li>
+                        <li><i class="fas fa-check"></i> DJ Set esclusivo</li>
+                        <li><i class="fas fa-check"></i> Bar & Cocktail</li>
+                        <li><i class="fas fa-check"></i> Balli fino a tardi</li>
+                    </ul>
+                    <a href="#prenota" class="btn btn-package" data-package="dopo-pranzo">
+                        Prenota Serata
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DJ Lineup Section -->
+    <section id="lineup" class="section section-lineup">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Line Up</span>
+                <h2 class="section-title">I nostri <em>DJ</em></h2>
+            </div>
+            
+            <p class="lineup-hint">
+                <i class="fas fa-eye-slash"></i>
+                Clicca per scoprire chi si nasconde dietro le console
+            </p>
+            
+            <div class="dj-grid">
+                <!-- DJ 1 -->
+                <div class="dj-card mystery-glow" data-dj="1">
+                    <div class="dj-avatar">
+                        <i class="fas fa-user-secret dj-mystery-icon"></i>
+                    </div>
+                    <span class="dj-number">DJ 01</span>
+                    <h3 class="dj-name">
+                        <span class="mystery-text">Mystery DJ</span>
+                    </h3>
+                    <p class="dj-slot">12:30 - 14:30</p>
+                    <button class="dj-reveal-btn">
+                        <i class="fas fa-eye"></i>
+                        Scopri
+                    </button>
+                </div>
+                
+                <!-- DJ 2 -->
+                <div class="dj-card mystery-glow" data-dj="2">
+                    <div class="dj-avatar">
+                        <i class="fas fa-user-secret dj-mystery-icon"></i>
+                    </div>
+                    <span class="dj-number">DJ 02</span>
+                    <h3 class="dj-name">
+                        <span class="mystery-text">Mystery DJ</span>
+                    </h3>
+                    <p class="dj-slot">14:30 - 16:30</p>
+                    <button class="dj-reveal-btn">
+                        <i class="fas fa-eye"></i>
+                        Scopri
+                    </button>
+                </div>
+                
+                <!-- DJ 3 -->
+                <div class="dj-card mystery-glow" data-dj="3">
+                    <div class="dj-avatar">
+                        <i class="fas fa-user-secret dj-mystery-icon"></i>
+                    </div>
+                    <span class="dj-number">DJ 03</span>
+                    <h3 class="dj-name">
+                        <span class="mystery-text">Mystery DJ</span>
+                    </h3>
+                    <p class="dj-slot">16:30 - 18:30</p>
+                    <button class="dj-reveal-btn">
+                        <i class="fas fa-eye"></i>
+                        Scopri
+                    </button>
+                </div>
+                
+                <!-- DJ 4 -->
+                <div class="dj-card mystery-glow" data-dj="4">
+                    <div class="dj-avatar">
+                        <i class="fas fa-user-secret dj-mystery-icon"></i>
+                    </div>
+                    <span class="dj-number">DJ 04</span>
+                    <h3 class="dj-name">
+                        <span class="mystery-text">Mystery DJ</span>
+                    </h3>
+                    <p class="dj-slot">18:30 - 20:30</p>
+                    <button class="dj-reveal-btn">
+                        <i class="fas fa-eye"></i>
+                        Scopri
+                    </button>
+                </div>
+                
+                <!-- DJ 5 -->
+                <div class="dj-card mystery-glow" data-dj="5">
+                    <div class="dj-avatar">
+                        <i class="fas fa-user-secret dj-mystery-icon"></i>
+                    </div>
+                    <span class="dj-number">DJ 05</span>
+                    <h3 class="dj-name">
+                        <span class="mystery-text">Mystery DJ</span>
+                    </h3>
+                    <p class="dj-slot">20:30 - 22:30</p>
+                    <button class="dj-reveal-btn">
+                        <i class="fas fa-eye"></i>
+                        Scopri
+                    </button>
+                </div>
+            </div>
+            
+            <div class="lineup-progress">
+                <div class="progress-dot" data-dj="1"></div>
+                <div class="progress-dot" data-dj="2"></div>
+                <div class="progress-dot" data-dj="3"></div>
+                <div class="progress-dot" data-dj="4"></div>
+                <div class="progress-dot" data-dj="5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="prenota" class="section section-booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <span class="section-label">Prenotazioni</span>
+                    <h2 class="section-title">Prenota il tuo <em>posto</em></h2>
+                    <p class="booking-desc">Compila il form per prenotare. Verrai reindirizzato su WhatsApp con il riepilogo precompilato, pronto da inviare.</p>
+
+                    <div class="booking-contacts">
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <span>@___figlidellestelle___</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Caffè delle Mura, Lucca</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="nome">Nome e Cognome *</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Mario Rossi">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Telefono *</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="+39 123 456 7890">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="persone">Numero Persone *</label>
+                            <select id="persone" name="persone" required>
+                                <option value="">Seleziona</option>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 persone</option>
+                                <option value="3">3 persone</option>
+                                <option value="4">4 persone</option>
+                                <option value="5">5 persone</option>
+                                <option value="6">6 persone</option>
+                                <option value="7">7+ persone</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pacchetto">Pacchetto *</label>
+                            <select id="pacchetto" name="pacchetto" required>
+                                <option value="">Seleziona</option>
+                                <option value="pranzo">Pranzo Show - €20</option>
+                                <option value="dopo-pranzo">Afterlunch/DJ Set - €10</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="note">Note/Eventuali intolleranze</label>
+                        <textarea id="note" name="note" rows="3"
+                            placeholder="Allergie, esigenze particolari, ecc..."></textarea>
+                    </div>
+
+                    <div class="form-total" id="formTotal">
+                        <span>Totale:</span>
+                        <span class="total-amount" id="totalAmount">€0</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">
+                        <span>Conferma Prenotazione</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+
+                    <p class="form-disclaimer">
+                        <i class="fas fa-shield-alt"></i>
+                        I tuoi dati sono protetti e verranno utilizzati solo per la prenotazione
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Events -->
+    <section class="section section-back">
+        <div class="container text-center">
+            <a href="index.html#eventi" class="btn btn-outline btn-lg">
+                <i class="fas fa-arrow-left"></i>
+                <span>Torna agli Eventi</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Prenotazione Ricevuta!</h3>
+            <p>Grazie <span id="modalName"></span>! Abbiamo ricevuto la tua prenotazione per <span
+                    id="modalPackage"></span>.</p>
+            <p class="modal-detail">Ti contatteremo presto su WhatsApp per confermare i dettagli.</p>
+            <button class="btn btn-primary" id="closeModal">Perfetto!</button>
+        </div>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/components.js"></script>
+    <script>
+        // Inizializza componenti per pagina evento
+        document.addEventListener('DOMContentLoaded', function() {
+            Components.init({
+                header: { activePage: 'eventi', isEventPage: true },
+                footer: { isEventPage: true }
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/whatsapp-booking.js"></script>
+    <script src="js/chat-assistant.js"></script>
+    <script>
+        // Quick Action: set message in textarea
+        function setMessage(text) {
+            const textarea = document.querySelector('.message-input');
+            textarea.value = text;
+            textarea.focus();
+        }
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const form = this;
+            const successMsg = document.getElementById('messageSuccess');
+            const submitBtn = form.querySelector('.message-submit');
+
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            submitBtn.disabled = true;
+
+            // Simulate form submission (replace with actual form handling)
+            setTimeout(() => {
+                form.style.display = 'none';
+                successMsg.classList.add('show');
+
+                // Reset after 5 seconds
+                setTimeout(() => {
+                    form.reset();
+                    form.style.display = 'block';
+                    successMsg.classList.remove('show');
+                    submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i>';
+                    submitBtn.disabled = false;
+                }, 5000);
+            }, 1500);
+
+            // Note: Per un form reale, usa Formspree o EmailJS
+            // Esempio con Formspree:
+            // fetch(form.action, {
+            //     method: 'POST',
+            //     body: new FormData(form),
+            //     headers: { 'Accept': 'application/json' }
+            // })
+        });
+        
+        // DJ Reveal Functionality
+        document.querySelectorAll('.dj-card').forEach(card => {
+            card.addEventListener('click', function() {
+                if (this.classList.contains('revealed')) return;
+                
+                // Qui in futuro puoi caricare l'immagine e il nome reale del DJ
+                // Per ora aggiungiamo la classe revealed per l'effetto
+                this.classList.add('revealed');
+                this.classList.remove('mystery-glow');
+                
+                // Aggiorna il progress dot
+                const djNumber = this.dataset.dj;
+                const dot = document.querySelector(`.progress-dot[data-dj="${djNumber}"]`);
+                if (dot) dot.classList.add('revealed');
+                
+                // Aggiorna il contenuto (placeholder - da sostituire con dati reali)
+                const nameEl = this.querySelector('.dj-name');
+                nameEl.innerHTML = 'Coming Soon';
+            });
+        });
+        
+        // Song Request Form Handler
+        document.getElementById('songRequestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const songTitle = document.getElementById('songTitle').value.trim();
+            const songArtist = document.getElementById('songArtist').value.trim();
+            const requesterName = document.getElementById('requesterName').value.trim();
+            
+            if (!songTitle || !songArtist) {
+                alert('Inserisci titolo e artista della canzone');
+                return;
+            }
+            
+            // Build WhatsApp message for song request
+            let message = '*RICHIESTA CANZONE* 🎵%0A%0A';
+            message += '*Evento:* Sarà perchè... è PASQUETTA%0A';
+            message += '*Canzone:* ' + songTitle + '%0A';
+            message += '*Artista:* ' + songArtist + '%0A';
+            if (requesterName) {
+                message += '*Richiesta da:* ' + requesterName + '%0A';
+            }
+            message += '%0A---%0a✅ Da aggiungere alla playlist!';
+            
+            // WhatsApp number
+            const phoneNumber = '393450688943';
+            const whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + message;
+            
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Show success message
+            const form = document.getElementById('songRequestForm');
+            const successMsg = document.getElementById('songRequestSuccess');
+            
+            form.style.display = 'none';
+            successMsg.classList.add('show');
+            
+            // Reset after 5 seconds
+            setTimeout(() => {
+                form.reset();
+                form.style.display = 'flex';
+                successMsg.classList.remove('show');
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>

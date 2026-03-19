@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="white">
+  <!-- Background circle (optional, for contrast) -->
+  <circle cx="200" cy="200" r="195" fill="#0a0a0a"/>
+  
+  <!-- FIGLI - Top, serif style -->
+  <text x="200" y="130" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="72" 
+        font-weight="400"
+        text-anchor="middle"
+        letter-spacing="8">FIGLI</text>
+  
+  <!-- delle - Middle, script/cursive style -->
+  <text x="200" y="195" 
+        font-family="'Brush Script MT', 'Lucida Calligraphy', cursive" 
+        font-size="48" 
+        font-style="italic"
+        text-anchor="middle"
+        fill="#d4af37">delle</text>
+  
+  <!-- STELLE - Bottom, serif style matching FIGLI -->
+  <text x="200" y="285" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="72" 
+        font-weight="400"
+        text-anchor="middle"
+        letter-spacing="4">STELLE</text>
+  
+  <!-- Decorative elements - stars -->
+  <polygon points="100,200 103,208 112,208 105,214 107,223 100,218 93,223 95,214 88,208 97,208" 
+           fill="#d4af37" opacity="0.8"/>
+  <polygon points="300,200 302,205 308,205 303,209 305,215 300,212 295,215 297,209 292,205 298,205" 
+           fill="#d4af37" opacity="0.6"/>
+  <polygon points="200,80 201,83 205,83 202,86 203,90 200,88 197,90 198,86 195,83 199,83" 
+           fill="#d4af37" opacity="0.5"/>
+  <polygon points="200,320 202,325 208,325 203,329 205,335 200,332 195,335 197,329 192,325 198,325" 
+           fill="#d4af37" opacity="0.7"/>
+</svg>
