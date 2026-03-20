@@ -134,6 +134,27 @@ Ho creato il workflow GitHub Actions per fare il deploy automatico del sito su S
 
 ---
 
+### 20 Marzo 2026 - Convertite tutte le immagini in WebP
+
+**Cosa ho fatto:**
+Ho convertito tutte le immagini del sito dal formato JPG/PNG a WebP per migliorare le performance di caricamento. Il formato WebP offre una compressione migliore mantenendo la stessa qualità visiva.
+
+**File coinvolti:**
+- Tutte le immagini in `assets/images/` convertite da .jpg/.png a .webp
+- `index.html` - Aggiornati tutti i riferimenti nel carosello (12 immagini)
+
+**Modifiche specifiche:**
+- Sostituite 26 immagini (.jpg/.png) con equivalenti .webp
+- Aggiornati i path in index.html da `.jpg` a `.webp`
+- Rimossi file di test delle card non più necessari
+
+**Vantaggi:**
+- File più leggeri (fino al 50% di riduzione)
+- Caricamento pagina più veloce
+- Migliore SEO (Core Web Vitals)
+
+---
+
 **Note per dopo:**
 - Se aggiungo altre pagine, devo ricordarmi di:
   1. Aggiungere `<div id="header-container"></div>` e `<div id="footer-container"></div>`
